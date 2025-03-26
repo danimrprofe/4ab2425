@@ -1,0 +1,75 @@
+
+<html>
+
+<head>
+    <title>Mi página web</title>
+    <meta c>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Change</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>The background color changes constantly</h1>
+
+    <script>
+        function changeBackgroundColor() {
+            // Generate a random hexadecimal color
+            const color = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+            document.body.style.backgroundColor = color;
+        }
+
+        // Change background color every 2 seconds
+        setInterval(changeBackgroundColor, 2000);
+    </script>
+</body>
+</html>
+
+<body style="background-color: aquamarine;">
+    <a href="receta.html">
+    <h1 style="color: brown;">Texto</h1>
+    </a>
+    Esto es una línea.
+    Esto aparece a continuación.
+    <br>
+    Esto sale en la siguiente línea.
+    <h1 style="font-size: 15px;">Párrafos</h1>
+    <p>Esto es un párrafo</p>
+    <p>Esto es otro párrafo</p>
+    <h1>Estilos</h1>
+    <p>
+        Esto está en <b>negrita</b><br>
+        Esto está en <i>cursiva</i><br>
+        Esto está <u>subrayado</u><br>
+        Esto está <b><u><i>en negrita,cursiva y subrayado</i></u></b>
+    </p>
+    <h1>Enlaces o hipervínculos</h1>
+    <p>Los enlaces se crean con la etiqueta A</p>
+    <a href="https://www.marca.com/">Página del marca</a><br>
+    <a href="https://www.sport.es/es/">Página del sport</a>
+    <h1>Imágenes</h1>
+    <p>Para insertar una imagen en un lugar del documento
+        vamos a utilizar la etiqueta IMG.
+    </p>
+    <h2>Imagen de internet</h2>
+    <img src="https://lumiere-a.akamaihd.net/v1/images/image_bf8739ba.jpeg" alt="toy story" width="20%">
+    <br>
+    <img src="buzz.png" alt="">
+    <img src="imagenes/andy.jpg" alt="">
+ </body>
+</html>
